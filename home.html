@@ -2,18 +2,68 @@
 <html>
 <head>
   <title>Search Widget Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #F8F8F8;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: center;
+      background-color: #FFFFFF;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #FF8C00;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      border: 1px solid #FF8C00;
+      border-radius: 5px;
+    }
+
+    gen-search-widget {
+      margin-bottom: 20px;
+    }
+    
+    .logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    
+    .logo img {
+      max-width: 200px;
+    }
+  </style>
   <!-- Gen App Builder widget bundle -->
   <script src="https://cloud.google.com/ai/gen-app-builder/client"></script>
 </head>
 <body>
-    
-<!-- Gen App Builder widget bundle -->
-<script src="https://cloud.google.com/ai/gen-app-builder/client"></script>
-
-<!-- Search widget element is now visible by default -->
-<gen-search-widget
-  configId="f618eec9-49ea-47e4-8a6f-612607af7cc3">
-</gen-search-widget>
-
+  <div class="container">
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <h1>Technical Assistant Bot</h1>
+    <gen-search-widget
+      configId="f618eec9-49ea-47e4-8a6f-612607af7cc3"
+      triggerId="searchWidgetTrigger">
+    </gen-search-widget>
+    <button id="searchWidgetTrigger" />Search here</button>
+  </div>
 </body>
 </html>
