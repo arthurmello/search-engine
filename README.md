@@ -13,4 +13,4 @@ Orange technical files are stored on Google Cloud Storage, and the search widget
 
 ## Access
 
-The tool can be accessed here:
+The tool can be accessed here: https://arthurmello.github.io/search-engine/home.html
